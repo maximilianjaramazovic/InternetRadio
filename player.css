@@ -21,7 +21,57 @@
 
 .mute-button {
   width: 30px;
-  height:30px;
+  height: 30px;
   margin-right: 12px;
 }
 
+.player-controls {
+  display: flex;
+  align-items: center;
+}
+
+.currently-playing {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.volume-controls {
+  display: flex;
+  align-items: center;
+}
+
+.currently-playing-label {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.currently-playing-title {
+  font-size: 22px;
+}
+
+.volume {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid #000;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+input[type="range"]::-webkit-slider-thumb, input[type="range"]::-moz-range-thumb, input[type="range"]::-ms-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+
+  height: 15px;
+  width:15px;
+
+  cursor: ew-resize;
+  background: #F59E0B;
+  box-shadow: -400px 0 0 390px #FDE68A;
+  border-radius: 50%;
+}
+
+input[type="range"]:focus {
+  border-radius: 50px;
+  box-shadow: 0 0 15px -4px #F59E0B;
+}
