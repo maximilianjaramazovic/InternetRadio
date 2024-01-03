@@ -1,0 +1,46 @@
+<!--
+  Audio player
+  Maximilian Jaramazovic
+  Created: 12/30/2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="player.css">
+  <title>Player</title>
+</head>
+<body>
+  <div class="radio-player">
+    <audio src="http://stream.hive365.co.uk:8088" class="visually-hidden" id="stream">
+    </audio>
+
+    <div class="player-controls">
+      <button name="play-pause" class="button play-pause-button" aria-label="Play/pause">
+        <i class="fa fa-play" aria-hidden></i>
+      </button>
+
+      <div class="volume-and-title">
+        <div class="currently-playing" aria-label="Currently playing">
+          <span class="currently-playing-label">Now playing Some Radio Station</span>
+          <span class="currently-playing-title">Listen to Some Radio Station</span>
+        </div>
+
+        <div class="volume-controls">
+          <button name="mute" class="button mute-button" aria-label="Mute/unmute">
+            <i class="fas fa-volume-down" aria-hidden></i>
+          </button>
+          <input type="range" name="volume" class="volume" min="0" max="1" step="0.05" value="0.2" aria-label="Volume">
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="player.js"></script>
+</body>
+</html>

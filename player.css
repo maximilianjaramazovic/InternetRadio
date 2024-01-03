@@ -1,0 +1,27 @@
+.radio-player {
+  margin: 30px;
+}
+.button {
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  background-color: #F59E0B;
+  color: #fff;
+  border-radius: 100%;
+}
+.play-pause-button {
+  width: 70px;
+  height: 70px;
+  font-size: 25px;
+  margin-right: 24px;
+}
+
+.mute-button {
+  width: 30px;
+  height:30px;
+  margin-right: 12px;
+}
+
